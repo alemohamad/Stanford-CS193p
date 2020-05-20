@@ -12,8 +12,13 @@ class EmojiMemoryGame {
     private(set) var model: MemoryGame<String> = createMemoryGame()
     
     static func createMemoryGame() -> MemoryGame<String> {
-        let emojis: Array<String> = ["👻", "🎃", "🕷"]
-        return MemoryGame<String>(numberOfPairsOfCards: emojis.count) { pairIndex in
+        let emojis: Array<String> = [
+            "👻", "🎃", "🕷", "🦇", "🦉", "🧛‍♂️",
+            "🧚‍♀️", "🦄", "🦹", "🦸‍♀️", "👷‍♀️", "🧝‍♂️"
+        ].shuffled()
+        // Extra Credit: larger set of random emoji
+        let randomTotal = Int.random(in: 4...5)
+        return MemoryGame<String>(numberOfPairsOfCards: randomTotal) { pairIndex in
             return emojis[pairIndex]
         }
     }

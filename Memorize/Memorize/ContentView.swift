@@ -20,7 +20,7 @@ struct ContentView: View {
         }
         .padding()
         .foregroundColor(Color.orange)
-        .font(.largeTitle)
+        .font(viewModel.cards.count == 5 * 2 ? .body : .largeTitle)
     }
 }
 
@@ -40,6 +40,7 @@ struct CardView: View {
                     .fill()
             }
         }
+        .aspectRatio(2/3, contentMode: .fit)
     }
 }
 
