@@ -8,3 +8,8 @@ After going over the mechanics of how the course works, this first lecture dives
 
 * [Watch Video](https://youtu.be/jbtqIBpUG7g)
 
+## Lecture 2: MVVM and the Swift Type System
+
+Conceptual overview of the architectural paradigm underlying the development of applications for iOS using SwiftUI: MVVM.  In addition, a key underpinning of the Swift Programming Language, its type system, is explained.  The Memorize demonstration continues, incorporating MVVM.
+
+* [Watch Video](https://youtu.be/4GjXq2Sr55Q)
